@@ -12,6 +12,11 @@
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
+  <img [src]="imageUrl">
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-fab vertical="center" horizontal="center" slot="fixed" (click)="takePicture()">
+    <ion-fab-button>
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>
